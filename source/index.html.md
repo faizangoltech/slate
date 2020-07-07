@@ -1,13 +1,13 @@
 --- 
 
-title: Swagger Test Page 
+title: Alive5 API-Docs 
 
 language_tabs: 
    - shell 
 
 toc_footers: 
-   - <a href='#'>Sign Up for a Developer Key</a> 
-   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a> 
+   - <a href='#'>Sign Up for a new Account </a> 
+   - <a href='https://app.alive5.com/signup'>Documentation Powered by Alive5 Inc.</a> 
 
 
 search: true 
