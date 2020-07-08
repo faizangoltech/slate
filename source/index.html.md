@@ -16,7 +16,7 @@ search: true
 
 # Introduction 
 
-This is a test API Docs demo for Alive5 APIS 
+This is a API Docs for Alive5 Users 
 
 **Version:** 1.0 
 
@@ -27,13 +27,13 @@ This is a test API Docs demo for Alive5 APIS
 |apiKey|*API Key*|
 |---|---| 
 
-# /1.0/OBJECTS/TAGS/LIST
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/TAGS/LIST
 ## ***GET*** 
 
 **Description:** List of all tags
 
 ### HTTP Request 
-`***GET*** /1.0/objects/tags/list` 
+`***GET*** https://api.alive5.com/public/1.0/objects/tags/list` 
 
 **Responses**
 
@@ -41,27 +41,27 @@ This is a test API Docs demo for Alive5 APIS
 | ---- | ----------- |
 | 200 | Tag ID, Tag Label |
 
-# /1.0/OBJECTS/CHANNELS-AND-USERS/LIST
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/CHANNELS-AND-USERS/LIST
 ## ***GET*** 
 
 **Description:** List of all channels and users that are in each channel.
 
 ### HTTP Request 
-`***GET*** /1.0/objects/channels-and-users/list` 
+`***GET*** https://api.alive5.com/public/1.0/objects/channels-and-users/list` 
 
 **Responses**
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | Channel ID, Channel Label, User ID, User Screen Name, User Email, User Role, User Created Time |
+| 200 | channel_id, channel_label,agents{user_id, email, user_role, created_at, screen_name} |
 
-# /1.0/ACCOUNT
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/ACCOUNT
 ## ***GET*** 
 
-**Description:** Gets Account informantion.
+**Description:** Gets Account information.
 
 ### HTTP Request 
-`***GET*** /1.0/account` 
+`***GET*** https://api.alive5.com/public/1.0/account` 
 
 **Responses**
 
@@ -69,13 +69,13 @@ This is a test API Docs demo for Alive5 APIS
 | ---- | ----------- |
 | 200 | Org_name |
 
-# /1.0/CONVERSATIONS/SMS
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS
 ## ***GET*** 
 
-**Description:** Output all SMS conversations based on specific date range.
+**Description:** Output of all SMS conversations based on a specific date range.
 
 ### HTTP Request 
-`***GET*** /1.0/conversations/sms` 
+`***GET*** https://api.alive5.com/public/1.0/conversations/sms` 
 
 **Parameters**
 
@@ -88,15 +88,15 @@ This is a test API Docs demo for Alive5 APIS
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org name, alive5_sessionID, Start time, Channel, Assigned To, Tags, (contacts) first name, (contacts) last name, (contacts) email, (contacts) phone, (contacts) notes, Chat Conversation |
+| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, tags, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, alive_sms_phone_number, chat_conversation{ created_at, created_by, message_content} |
 
-# /1.0/CONVERSATIONS/SMS/SEND
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS/SEND
 ## ***POST*** 
 
 **Description:** Send a single SMS message from an Alive5 phone number to a mobile phone number.
 
 ### HTTP Request 
-`***POST*** /1.0/conversations/sms/send` 
+`***POST*** https://api.alive5.com/public/1.0/conversations/sms/send` 
 
 **Parameters**
 
@@ -112,15 +112,15 @@ This is a test API Docs demo for Alive5 APIS
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | Successful |
+| 200 | error, newThread{phone_mobile, created_at, thread_id, thread_type, assignedTo, timestamp, updated_at, aliveOpentokSession, crm_id, platform, channel_id, status_timestamp, org_name, lastmessage_at, thread_status, crmData{phone_mobile, updated_at, crm_id, created_at, last_name, first_name, org_name, crm_type, email} } |
 
-# /1.0/CONVERSATIONS/LIVECHAT
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/LIVECHAT
 ## ***GET*** 
 
-**Description:**  Output all live chat conversations based on specific date range.
+**Description:**  Output of all live chat conversations based on specific date range.
 
 ### HTTP Request 
-`***GET*** /1.0/conversations/livechat` 
+`***GET*** https://api.alive5.com/public/1.0/conversations/livechat` 
 
 **Parameters**
 
@@ -135,15 +135,15 @@ This is a test API Docs demo for Alive5 APIS
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org name, alive5_sessionID, Start time, Channel, Assigned To, Tags, (contacts) first name, (contacts) last name, (contacts) email, (contacts) phone, (contacts) notes, user agent, IP address, City, State, Country, ZIP Code, Referrer URL, Page URL, Chat Conversation |
+| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, chat_conversation{ created_at, created_by, message_content}, ip_address, location, city_state_country_zip, referrer_url, page_url |
 
-# /1.0/CONVERSATIONS/FBM
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/FBM
 ## ***GET*** 
 
 **Description:** Output all Facebook Messenger conversations based on specific date range.
 
 ### HTTP Request 
-`***GET*** /1.0/conversations/fbm` 
+`***GET*** https://api.alive5.com/public/1.0/conversations/fbm` 
 
 **Parameters**
 
@@ -156,15 +156,15 @@ This is a test API Docs demo for Alive5 APIS
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org name, alive5_sessionID, Start time, Channel, Assigned To, Tags, (contacts) first name, (contacts) last name, (contacts) email, (contacts) phone, (contacts) notes, Chat Conversation |
+| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, chat_conversation{ created_at, created_by, message_content} |
 
-# /1.0/CONVERSATIONS/SUMMARY
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SUMMARY
 ## ***GET*** 
 
 **Description:** Output all Facebook Messenger conversations based on specific date range.
 
 ### HTTP Request 
-`***GET*** /1.0/conversations/summary` 
+`***GET*** https://api.alive5.com/public/1.0/conversations/summary` 
 
 **Parameters**
 
@@ -178,5 +178,3 @@ This is a test API Docs demo for Alive5 APIS
 | Code | Description |
 | ---- | ----------- |
 | 200 | visitors_web, visitors_fbm, visitors_sms, contacts_web, contacts_fbm, contacts_sms |
-
-<!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
