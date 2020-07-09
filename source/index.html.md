@@ -1,4 +1,4 @@
---- 
+	--- 
 
 title: Alive5 API-Docs 
 
@@ -6,11 +6,8 @@ language_tabs:
    - shell 
 
 toc_footers: 
-   - <a href='#'>Sign Up for a Developer Key</a> 
-   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a> 
-
-includes: 
-   - errors 
+  - <a href='#'>Sign Up for a new Account </a> 
+   - <a href='https://app.alive5.com/signup'>Documentation Powered by A</a>
 
 search: true 
 
@@ -142,7 +139,28 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | error, newThread{phone_mobile, created_at, thread_id, thread_type, assignedTo, timestamp, updated_at, aliveOpentokSession, crm_id, platform, channel_id, status_timestamp, org_name, lastmessage_at, thread_status, crmData{phone_mobile, updated_at, crm_id, created_at, last_name, first_name, org_name, crm_type, email} } |
+| error | Response Message |
+| newThread | New Message Information |
+| phone_mobile |  |
+| created_at | Time of Creation |
+| thread_id | Thread ID |
+| thread_type | Thread Type |
+| assignedTo | Agent ID |
+| timestamp | Time Stamp |
+| updated_at | Clients Phone Number |
+| aliveOpentokSession |  |
+| crm_id | CRM ID |
+| platform | Platform |
+| channel_id | Channel ID |
+| status_timestamp | Status | Time Stamp |
+| org_name | Org Name |
+| lastmessage_at | Time of Last Message |
+| thread_status | Status |
+| crmData | CRM Information |
+| last_name | Clients First Name |
+| first_name | Clients Last Name |
+| crm_type | CRM Type |
+| email | Email |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/LIVECHAT
 ## ***GET*** 
@@ -165,7 +183,30 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, chat_conversation{ created_at, created_by, message_content}, ip_address, location, city_state_country_zip, referrer_url, page_url |
+| org_name | Org Name |
+| alive5_sessionID | Alive5 Session ID |
+| start_time | Start Time |
+| end_time | End Time |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | User Agent ID |
+| assigned_to | User Agent Name |
+| contacts_first_name | Clients First Name |
+| contacts_last_name | Clients Last Name |
+| contacts_email | Clients Email |
+| contacts_phone | Clients Phone Number |
+| contacts_notes | Clients Notes |
+| alive_sms_phone_number | Channel associated Phone Number |
+| chat_conversation | Chat Conversations |
+| created_at | Time of creation |
+| created_by | Created By Client/User |
+| message_content | Content of the Message |
+| ip_address | IP Address |
+| location | Location of Clien |
+| city_state_country_zip | City, State, Country, Zip-Code |
+| referrer_url | referrer URL |
+| page_url | Page URL |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/FBM
 ## ***GET*** 
@@ -186,7 +227,24 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, chat_conversation{ created_at, created_by, message_content} |
+| org_name | Org Name |
+| alive5_sessionID | Alive5 Session ID |
+| start_time | Start Time |
+| end_time | End Time |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | Agent User ID |
+| assigned_to | Agent UserName |
+| contacts_first_name | Clients First Name |
+| contacts_last_name | Clients Last Name |
+| contacts_email | Clients Email |
+| contacts_phone | Clients Phone Number |
+| contacts_notes | Clients Notes |
+| chat_conversation | Chat Conversations |
+| created_at | Time of creation |
+| created_by | Created By Client/User |
+| message_content | Content of the Message |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SUMMARY
 ## ***GET*** 
@@ -207,7 +265,6 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | visitors_web, visitors_fbm, visitors_sms, contacts_web, contacts_fbm, contacts_sms |
 | visitors_web | total number of web threads that create and don’t create a contact |
 | visitors_fbm | total number of Facebook Messenger conversations that create and don’t create a contact. |
 | visitors_sms | total number of web threads that create and don’t create a contact |
