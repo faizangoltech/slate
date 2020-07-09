@@ -94,6 +94,8 @@ This is a API Docs for Alive5 Users
 | 201 | channel_id, channel_name, crm_id, agent_id, assigned_to, tags |
 | 202 | contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes |
 | 203 | alive_sms_phone_number, chat_conversation{ created_at, created_by, message_content} |
+| org_name | Alive5 Org Name |
+| alive5_sessionID | Alive5 Session ID |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS/SEND
 ## ***POST*** 
