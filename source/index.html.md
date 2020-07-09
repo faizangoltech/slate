@@ -41,7 +41,10 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | email, api_key, org_name, iat |
+| email | Email |
+| api_key | API Key |
+| org_name | Org Name |
+| iat |  |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/TAGS/LIST
 ## ***GET*** 
@@ -55,7 +58,8 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | tag_id, tag_label |
+| tag_id | Tag ID |
+| tag_label | Tag Label |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/CHANNELS-AND-USERS/LIST
 ## ***GET*** 
@@ -69,7 +73,12 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | channel_id, channel_label,agents{user_id, email, user_role, created_at, screen_name} |
+| channel_id | Channel ID |
+| channel_label | Channel Label |
+| agents | Agents Information |
+| email | Email |
+| created_at | Time of Creation |
+| screen_name | Agent Name |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS
 ## ***GET*** 
@@ -90,12 +99,26 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org_name, alive5_sessionID, start_time, end_time |
-| 201 | channel_id, channel_name, crm_id, agent_id, assigned_to, tags |
-| 202 | contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes |
-| 203 | alive_sms_phone_number, chat_conversation{ created_at, created_by, message_content} |
 | org_name | Alive5 Org Name |
 | alive5_sessionID | Alive5 Session ID |
+| start_time | Start Time |
+| end_time | End Time |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | User ID |
+| assigned_to | Assigned to UserName |
+| tags | Tags |
+| contacts_first_name | Clients First Name |
+| contacts_last_name | Clients Last Name |
+| contacts_email | Clients Email |
+| contacts_phone | Clients Phone Number |
+| contacts_notes | Clients Notes |
+| alive_sms_phone_number | Channel associated Phone Number |
+| chat_conversation | Chat Conversations |
+| created_at | Time of creation |
+| created_by | Created By Client/User |
+| message_content | Content of the Message |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS/SEND
 ## ***POST*** 
