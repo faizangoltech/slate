@@ -6,9 +6,11 @@ language_tabs:
    - shell 
 
 toc_footers: 
-   - <a href='#'>Sign Up for a new Account </a> 
-   - <a href='https://app.alive5.com/signup'>Documentation Powered by Alive5 Inc.</a> 
+   - <a href='#'>Sign Up for a Developer Key</a> 
+   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a> 
 
+includes: 
+   - errors 
 
 search: true 
 
@@ -27,6 +29,20 @@ This is a API Docs for Alive5 Users
 |apiKey|*API Key*|
 |---|---| 
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/ACCOUNT
+## ***GET*** 
+
+**Description:** Gets Account information.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/account` 
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 | email, api_key, org_name, iat |
+
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/TAGS/LIST
 ## ***GET*** 
 
@@ -39,7 +55,7 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | Tag ID, Tag Label |
+| 200 | tag_id, tag_label |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/CHANNELS-AND-USERS/LIST
 ## ***GET*** 
@@ -54,20 +70,6 @@ This is a API Docs for Alive5 Users
 | Code | Description |
 | ---- | ----------- |
 | 200 | channel_id, channel_label,agents{user_id, email, user_role, created_at, screen_name} |
-
-# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/ACCOUNT
-## ***GET*** 
-
-**Description:** Gets Account information.
-
-### HTTP Request 
-`***GET*** https://api.alive5.com/public/1.0/account` 
-
-**Responses**
-
-| Code | Description |
-| ---- | ----------- |
-| 200 | email, api_key, org_name, iat |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS
 ## ***GET*** 
@@ -88,7 +90,10 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | org_name, alive5_sessionID, start_time, end_time, channel_id, channel_name, crm_id, agent_id, assigned_to, tags, contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes, alive_sms_phone_number, chat_conversation{ created_at, created_by, message_content} |
+| 200 | org_name, alive5_sessionID, start_time, end_time |
+| 201 | channel_id, channel_name, crm_id, agent_id, assigned_to, tags |
+| 202 | contacts_first_name, contacts_last_name, contacts_email, contacts_phone, contacts_notes |
+| 203 | alive_sms_phone_number, chat_conversation{ created_at, created_by, message_content} |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS/SEND
 ## ***POST*** 
@@ -178,3 +183,5 @@ This is a API Docs for Alive5 Users
 | Code | Description |
 | ---- | ----------- |
 | 200 | visitors_web, visitors_fbm, visitors_sms, contacts_web, contacts_fbm, contacts_sms |
+
+<!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
