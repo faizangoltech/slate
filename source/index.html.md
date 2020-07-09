@@ -2,6 +2,14 @@
 
 title: Alive5 API-Docs 
 
+language_tabs: 
+   - shell 
+
+toc_footers: 
+  - <a href='#'>Sign Up for a new Account </a> 
+  - <a href='https://app.alive5.com/signup'>Documentation Powered by Alive5</a>
+
+
 search: true 
 
 --- 
