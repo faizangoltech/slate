@@ -67,7 +67,7 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| 200 | Org_name |
+| 200 | email, api_key, org_name, iat |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS
 ## ***GET*** 
@@ -105,8 +105,8 @@ This is a API Docs for Alive5 Users
 | phone_number_from | body | SMS Phone Number (Alive5) | Yes | text |
 | phone_number_to | body | SMS Phone Number (Customer) | Yes | text |
 | message | body | Text of what to send out | Yes | text |
-| assigned_channel | body | Channel ID | Yes | text |
-| assigned_user | body | User ID | Yes | text |
+| channel_id | body | Channel ID | Yes | text |
+| user_id | body | User ID | Yes | text |
 
 **Responses**
 
