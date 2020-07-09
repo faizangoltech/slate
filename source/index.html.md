@@ -1,13 +1,6 @@
-	--- 
+--- 
 
 title: Alive5 API-Docs 
-
-language_tabs: 
-   - shell 
-
-toc_footers: 
-  - <a href='#'>Sign Up for a new Account </a> 
-   - <a href='https://app.alive5.com/signup'>Documentation Powered by A</a>
 
 search: true 
 
@@ -265,11 +258,11 @@ This is a API Docs for Alive5 Users
 
 | Code | Description |
 | ---- | ----------- |
-| visitors_web | total number of web threads that create and don’t create a contact |
+| visitors_web | total number of web threads that create and don’t create a contact. |
 | visitors_fbm | total number of Facebook Messenger conversations that create and don’t create a contact. |
-| visitors_sms | total number of web threads that create and don’t create a contact |
-| contacts_web | total number of web threads that create and don’t create a contact |
-| contacts_fbm | total number of web threads that create and don’t create a contact |
-| contacts_sms | total number of web threads that create and don’t create a contact |
+| visitors_sms | total number of SMS conversations. Since every convo includes a phone number, it will create a Contact. |
+| contacts_web | total number of web conversations which have at least an email or phone number. |
+| contacts_fbm | total number of facebook conversations which have at least an email or phone number. |
+| contacts_sms |  same as “visitors_sms” |
 
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
