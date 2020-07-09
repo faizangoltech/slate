@@ -2,14 +2,6 @@
 
 title: Alive5 API-Docs 
 
-language_tabs: 
-   - shell 
-
-toc_footers: 
-  - <a href='#'>Sign Up for a new Account </a> 
-  - <a href='https://app.alive5.com/signup'>Documentation Powered by Alive5</a>
-
-
 search: true 
 
 --- 
@@ -37,7 +29,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | email | Email |
 | api_key | API Key |
@@ -54,7 +46,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | tag_id | Tag ID |
 | tag_label | Tag Label |
@@ -69,7 +61,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | channel_id | Channel ID |
 | channel_label | Channel Label |
@@ -95,7 +87,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | org_name | Alive5 Org Name |
 | alive5_sessionID | Alive5 Session ID |
@@ -138,7 +130,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | error | Response Message |
 | newThread | New Message Information |
@@ -182,7 +174,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | org_name | Org Name |
 | alive5_sessionID | Alive5 Session ID |
@@ -205,7 +197,7 @@ This is a API Docs for Alive5 Users
 | message_content | Content of the Message |
 | ip_address | IP Address |
 | location | Location of Clien |
-| city_state_country_zip | City, State, Country, Zip-Code |
+| city_state_country_zip | City, State, Country, Zip |
 | referrer_url | referrer URL |
 | page_url | Page URL |
 
@@ -226,7 +218,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | org_name | Org Name |
 | alive5_sessionID | Alive5 Session ID |
@@ -264,7 +256,7 @@ This is a API Docs for Alive5 Users
 
 **Responses**
 
-| Code | Description |
+| Value | Description |
 | ---- | ----------- |
 | visitors_web | total number of web threads that create and don’t create a contact. |
 | visitors_fbm | total number of Facebook Messenger conversations that create and don’t create a contact. |
