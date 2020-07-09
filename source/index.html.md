@@ -185,5 +185,11 @@ This is a API Docs for Alive5 Users
 | Code | Description |
 | ---- | ----------- |
 | 200 | visitors_web, visitors_fbm, visitors_sms, contacts_web, contacts_fbm, contacts_sms |
+| visitors_web | total number of web threads that create and don’t create a contact |
+| visitors_fbm | total number of Facebook Messenger conversations that create and don’t create a contact. |
+| visitors_sms | total number of web threads that create and don’t create a contact |
+| contacts_web | total number of web threads that create and don’t create a contact |
+| contacts_fbm | total number of web threads that create and don’t create a contact |
+| contacts_sms | total number of web threads that create and don’t create a contact |
 
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
