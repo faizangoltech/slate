@@ -2,8 +2,14 @@
 
 title: Alive5 API-Docs 
 
-search: true 
+language_tabs: 
+   - shell 
 
+toc_footers: 
+  - <a href='#'>Sign Up for a new Account </a> 
+  - <a href='https://app.alive5.com/signup'>Documentation Powered by Alive5</a>
+
+search: true 
 --- 
 
 # Introduction 
@@ -152,6 +158,57 @@ This is a API Docs for Alive5 Users
 | first_name | Clients Last Name |
 | crm_type | CRM Type |
 | email | Email |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/SMS/PUSH
+## ***POST*** 
+
+**Description:** Send a single SMS message from an mobile phone number to a Alive5 phone number.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/conversations/sms/push` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| phone_number_from | body | Phone Number (Customer) | Yes | text |
+| phone_number_to | body | Phone Number (Alive5) | Yes | text |
+| message | body | Text of what to send out | Yes | text |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| assignedTo | Agent Name |
+| channel_id | Channel ID |
+| created_by | From Number |
+| direction | Inbound/Outbound |
+| event_mode | Event Mode |
+| media_url | Media URL |
+| message_content | Message |
+| message_type | Message Type |
+| org_name | Org Name |
+| route | Route |
+| thread_id | Thread ID |
+| user_id | User ID |
+| From | From |
+| To | To |
+| phone_mobile | Clients Phone Number |
+| created_at | Creation Time |
+| thread_type | Thread Type |
+| timestamp | Time Stamp |
+| visible_to_channel | Visible to Channel |
+| updated_at | Time of Updation |
+| crm_id | CRM ID |
+| status_timestamp | Status | Time Stamp |
+| first_name | Clients Last Name |
+| last_name | Clients First Name |
+| thread_status | Status |
+| crm_type | CRM Type |
+| email | Email |
+| alivesms_phone_number | Alive5 Channel Number |
+| init_messageid |  |
+| init_message_content | Message |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CONVERSATIONS/LIVECHAT
 ## ***GET*** 
