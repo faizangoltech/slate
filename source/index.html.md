@@ -34,7 +34,6 @@ This is a API Docs for Alive5 Users
 | email | Email |
 | api_key | API Key |
 | org_name | Org Name |
-| iat |  |
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/TAGS/LIST
 ## ***GET*** 
@@ -141,7 +140,6 @@ This is a API Docs for Alive5 Users
 | assignedTo | Agent ID |
 | timestamp | Time Stamp |
 | updated_at | Clients Phone Number |
-| aliveOpentokSession |  |
 | crm_id | CRM ID |
 | platform | Platform |
 | channel_id | Channel ID |
@@ -196,8 +194,10 @@ This is a API Docs for Alive5 Users
 | created_by | Created By Client/User |
 | message_content | Content of the Message |
 | ip_address | IP Address |
-| location | Location of Clien |
-| city_state_country_zip | City, State, Country, Zip |
+| city | City |
+| state | State |
+| country | Country |
+| zip | Zip |
 | referrer_url | referrer URL |
 | page_url | Page URL |
 
