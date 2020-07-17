@@ -322,4 +322,62 @@ This is a API Docs for Alive5 Users
 | contacts_fbm | total number of facebook conversations which have at least an email or phone number. |
 | contacts_sms |  same as “visitors_sms” |
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/CHANNEL
+## ***POST*** 
+
+**Description:** Creates a channel in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/channel` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| channel_name | body | Channel Name | Yes | string |
+| org_name | body | Org Name | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| agents | Agents Information |
+| channel_id | Channel ID |
+| channel_name | Channel name |
+| channel_status | Channel Status |
+| created_at | Time of creation |
+| label | Channel Name |
+| org_name | Org Name |
+| system_generated |  |
+| updated_at | Time of Updation |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/AGENT
+## ***POST***  
+
+**Description:** Creates an agent for the channel in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/agent` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| email | body | Email | Yes | string |
+| screenname | body | Agent Name | Yes | string |
+| org_name | body | Org Name | Yes | string |
+| role | body | Role | Yes | string |
+| channels | body | Channels | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| created_at | Time of creation |
+| email | Email |
+| org_name | Org Name |
+| user_email | Email |
+| user_id | Agent ID |
+| user_status | Status |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
