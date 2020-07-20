@@ -383,4 +383,88 @@ This is a API Docs for Alive5 Users
 | user_id | Agent ID |
 | user_status | Status |
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/FAQ-CATEGORY
+## ***POST***  
+
+**Description:** Creates a new Faq Category in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/faq-category` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| title | body | Title of Category | Yes | string |
+| channel | body | Channels | Yes | string |
+| org_name | body | Org Name | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| category_id | Category ID |
+| category_name | Category Name |
+| channel_ids | Channel IDs |
+| created_at | Time of Creation |
+| label | Label |
+| org_name | Org Name |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/FAQ-ARTICLE
+## ***POST***  
+
+**Description:** Creates a new Faq Article in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/faq-article` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| content | body | Content | Yes | string |
+| category | body | Category | Yes | string |
+| org_name | body | Org Name | Yes | string |
+| title | body | Title | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| article_id | Article ID |
+| body | Body |
+| category_name | Category Name |
+| created_at | Time of Creation |
+| updated_at | Time of Updation |
+| org_name | Org Name |
+| title | Title |
+| channel_ids | Channel IDs |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/TAG
+## ***POST***  
+
+**Description:** Creates a new Tag in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/tag` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| email | body | Email | Yes | string |
+| org_name | body | Org Name | Yes | string |
+| name | body | Name of Tag | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| created_at | Time of Creation |
+| label | Label |
+| org_name | Org Name |
+| tag_id | Tag ID |
+| tagname | Tag Name |
+| email | Email |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
