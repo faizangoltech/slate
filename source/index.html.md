@@ -467,4 +467,103 @@ This is a API Docs for Alive5 Users
 | tagname | Tag Name |
 | email | Email |
 
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/widget` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| widget_name | body | Widget Name | Yes | string |
+| widget_type | body | Widget Type | Yes | string |
+| botname | body | Name of Bot | Yes | string |
+| accessChannels | body | Channels to access | Yes | string |
+| channel_id | body | Channel ID | Yes | string |
+| org_name | body | Org Name | Yes | string |
+| shortCode | body | Short Code | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| accessChannels | Channels to access |
+| access_type | Access Type |
+| channel_id | Channel ID |
+| wimg | Widget Image |
+| wname | Widget Name |
+| wscript | Widget Script |
+| created_at | Time of Creation |
+| id | ID |
+| is_alive5_phone_number | Alive5 Phone Number |
+| org_name | Org Name |
+| qr_config |  |
+| short_code | Short Code |
+| sms_phone_number | Phone Number |
+| website_url | Website URL |
+| widget_auto_msg |  |
+| widget_id | Widget ID |
+| widget_name | Widget Name |
+| botusername | Bot User Name |
+| widget_type | Widget Type |
+| window_settings | Window Settings |
+| icon_url | Icon URL |
+| banner_top_bg | Banner Top Background |
+| banner_bottom_bg | Banner Bottom Background |
+| banner_divider_bg | Banner Divider Background |
+| logo_top_bg | Logo Top Background |
+| logo_bottom_bg | Logo Bottom Background |
+| logo_bg_pattern_type | Logo Background Pattern Type |
+| chat_bg_pattern_type | Chat Background Pattern Type |
+| footer_bg_pattern_type | Footer Background Pattern Type |
+| footer_bg | Footer Background |
+| footer_btn_border | Footer Button Border |
+| footer_btn_font | Footer Button Font |
+| footer_btn_bg | Footer Button Background |
+| banner_font | Banner Font |
+| chat_body_bg | Chat Body Background |
+| agent_bubble_bg | Agent Bubble Background |
+| agent_font | Agent Font |
+| visitor_bubble_bg | Visitor Bubble Background |
+| visitor_font | Visitor Font |
+| header_m1 | Header Media1 |
+| header_m2 | Header Media2 |
+| banner_top_bg_sms | Banner Top Background SMS |
+| banner_bottom_bg_sms | Banner Bottom Background SMS |
+| banner_font_sms | Banner Font SMS |
+| button_background_sms | Button Background SMS |
+| button_font_sms | Button Font SMS |
+| logo_bg_color_type | Logo Background Color Type |
+| title_banner_bg_color_type | Title Banner Background Color Type |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/BOTCHAIN
+## ***POST***  
+
+**Description:** Creates a new Botchain in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api.alive5.com/public/1.0/create/botchain` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| widget_id | body | Widget ID | Yes | string |
+| org_name | body | Org Name | Yes | string |
+| channel_id | body | Channel ID | Yes | string |
+| botchain_name | body | Botchain Name | Yes | string |
+| bot_type | body | Bot Type | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| bot_type | Botchain Type |
+| botchain_label | Botchain Label |
+| botchain_name | Botchain Name |
+| channel_ids | Channel IDs |
+| org_name | Org Name |
+| widget_ids | Widget IDs |
+| botchain_id | Botchain ID |
+| created_at | Time of Creation |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
