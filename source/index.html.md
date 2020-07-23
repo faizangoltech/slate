@@ -467,6 +467,11 @@ This is a API Docs for Alive5 Users
 | tagname | Tag Name |
 | email | Email |
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/CREATE/WIDGET
+## ***POST***  
+
+**Description:** Creates a new Widget in Alive5 Account.
+
 ### HTTP Request 
 `***POST*** https://api.alive5.com/public/1.0/create/widget` 
 
