@@ -571,4 +571,65 @@ This is a API Docs for Alive5 Users
 | botchain_id | Botchain ID |
 | created_at | Time of Creation |
 
+# HTTPS://API-V2.ALIVE5.COM/PUBLIC/1.0/CONTACT/CREATE-NEW
+## ***POST***  
+
+**Description:** Creates a new Contact in Alive5 Account.
+
+### HTTP Request 
+`***POST*** https://api-v2.alive5.com/public/1.0/contact/create-new` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| org_name | Parameters | Org Name | Yes | string |
+| email | Parameters | Email | Yes | string |
+| first_name | Parameters |  First Name | Yes | string |
+| phone_mobile | Parameters | Phone Number | Yes | string |
+| last_name | Parameters | Last Name | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| created_at | Time of Creation |
+| crm_id | CRM ID |
+| updated_at | Time of Updation |
+| email | Email |
+| first_name | First Name |
+| last_name | Last Name |
+| org_name | Org Name |
+| phone_mobile | Phone Number |
+
+# HTTPS://API-V2.ALIVE5.COM/PUBLIC/1.0/CONTACT/UPDATE-CONTACT
+## ***PUT***  
+
+**Description:** Updates a Contact in Alive5 Account.
+
+### HTTP Request 
+`***PUT*** https://api-v2.alive5.com/public/1.0/contact/update-contact` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| crm_id | Body | CRM ID | Yes | string |
+| org_name | Body | Org Name | Yes | string |
+| email | Body | Email | Yes | string |
+| first_name | Body |  First Name | Yes | string |
+| phone_mobile | Body | Phone Number | Yes | string |
+| last_name | Body | Last Name | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| phone_mobile | Phone Number |
+| updated_at | Time of Updation |
+| email | Email |
+| last_name | Last Name |
+| first_name | First Name |
+| message | Message |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
