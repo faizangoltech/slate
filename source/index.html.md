@@ -632,4 +632,59 @@ This is a API Docs for Alive5 Users
 | first_name | First Name |
 | message | Message |
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/OBJECTS/CONTACT/GET-ALL
+## ***GET***  
+
+**Description:** Get all the Contacts of current Organization.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/objects/contact/get-all 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
+| limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| address | Address |
+| billing_address | Address |
+| billing_city | City |
+| billing_country | Country |
+| billing_state | State |
+| billing_zip | Zip Code |
+| city | City |
+| company | Company |
+| companytitle | Company Name |
+| country | Country |
+| created_at | Time of Creation |
+| crm_id | CRM ID |
+| email | Email |
+| facebook | Facebook |
+| first_name | First Name |
+| last_name | Last Name |
+| linkedin | Linkedin |
+| instagram | Instagram |
+| snapchat | Snapchat |
+| whatsapp | WhatsApp |
+| accountid | ACCOUNT ID |
+| wechat | WeChat |
+| viber | Viber |
+| faq_question | faq_question |
+| youtube | Youtube |
+| notes | Notes |
+| org_name | Org Name |
+| phone_mobile | Phone Number |
+| state | State |
+| thread_id | THREAD ID |
+| twitter | Twitter |
+| updated_at | Time of Updation |
+| xip | XIP |
+| crm_type | CRM Type |
+| last_interaction_at | Last Intteraction Time |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
