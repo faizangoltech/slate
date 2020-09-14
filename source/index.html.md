@@ -638,7 +638,7 @@ This is a API Docs for Alive5 Users
 **Description:** Get all the Contacts of current Organization.
 
 ### HTTP Request 
-`***GET*** https://api.alive5.com/public/1.0/objects/contact/get-all 
+`***GET*** https://api.alive5.com/public/1.0/objects/contact/get-all`
 
 **Parameters**
 
