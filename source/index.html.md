@@ -229,6 +229,7 @@ This is a API Docs for Alive5 Users
 | date-end | params | End date | No | string |
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
+| filter_by | params | Can filter by the name of the Channel (Ex: "general") | No | string |
 
 **Responses**
 
