@@ -688,4 +688,164 @@ This is a API Docs for Alive5 Users
 | crm_type | CRM Type |
 | last_interaction_at | Last Intteraction Time |
 
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/GET-BOTS-REPORTING
+## ***GET***  
+
+**Description:** Get Bots Reporting.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/get-bots-reporting 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| from_datetime | params | From Date | Yes | string |
+| to_datetime | params | To Date | Yes | string |
+| botflowFilter | params | Bot Flow Filter | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| alivesms_phone_number | SMS Number |
+| botchain_name | Botchain Name |
+| bot_timestamp | Bot Timestamp |
+| from_phone_number | Phone Number |
+| org_name | Org Name |
+| orgbot_name | Org Bot Name |
+| orgbot_type | Org Bot Type |
+| thread_id | Thread ID |
+| init_messageid | Initial Message ID |
+| init_message_content | initial Message Content |
+| init_orgbot_name | Initial Org Bot Name |
+| bot_message | Bot Message |
+| user_reply | User Reply |
+| keyword_found | Keyword Found |
+| transaction_id | Transaction ID |
+| report_id | Report ID |
+| donaterequest_status | Donate Request Status |
+| donate_amount | Donate Amount |
+| question_type | Question Type |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/GET-FAQ-REPORTING
+## ***GET***  
+
+**Description:** Get FAQ Reporting.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/get-faq-reporting 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| from_datetime | params | From Date | Yes | string |
+| to_datetime | params | To Date | Yes | string |
+| botflowFilter | params | Bot Flow Filter | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| alivesms_phone_number | SMS Number |
+| botchain_name | Botchain Name |
+| bot_timestamp | Bot Timestamp |
+| from_phone_number | Phone Number |
+| org_name | Org Name |
+| orgbot_name | Org Bot Name |
+| orgbot_type | Org Bot Type |
+| thread_id | Thread ID |
+| init_messageid | Initial Message ID |
+| init_message_content | initial Message Content |
+| init_orgbot_name | Initial Org Bot Name |
+| bot_message | Bot Message |
+| user_reply | User Reply |
+| keyword_found | Keyword Found |
+| transaction_id | Transaction ID |
+| report_id | Report ID |
+| donaterequest_status | Donate Request Status |
+| donate_amount | Donate Amount |
+| question_type | Question Type |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/GET-MULTIPLEQUESTION-REPORTING
+## ***GET***  
+
+**Description:** Get Multi-Question Reporting.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/get-multiplequestion-reporting 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| from_datetime | params | From Date | Yes | string |
+| to_datetime | params | To Date | Yes | string |
+| botflowFilter | params | Bot Flow Filter | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| alivesms_phone_number | SMS Number |
+| botchain_name | Botchain Name |
+| bot_timestamp | Bot Timestamp |
+| from_phone_number | Phone Number |
+| org_name | Org Name |
+| orgbot_name | Org Bot Name |
+| orgbot_type | Org Bot Type |
+| thread_id | Thread ID |
+| init_messageid | Initial Message ID |
+| init_message_content | initial Message Content |
+| init_orgbot_name | Initial Org Bot Name |
+| bot_message | Bot Message |
+| user_reply | User Reply |
+| keyword_found | Keyword Found |
+| transaction_id | Transaction ID |
+| report_id | Report ID |
+| donaterequest_status | Donate Request Status |
+| donate_amount | Donate Amount |
+| question_type | Question Type |
+
+# HTTPS://API.ALIVE5.COM/PUBLIC/1.0/GET-FREETEXT-REPORTING
+## ***GET***  
+
+**Description:** Get Free Text Reporting.
+
+### HTTP Request 
+`***GET*** https://api.alive5.com/public/1.0/get-freetext-reporting 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| from_datetime | params | From Date | Yes | string |
+| to_datetime | params | To Date | Yes | string |
+| botflowFilter | params | Bot Flow Filter | Yes | string |
+
+**Responses**
+
+| Value | Description |
+| ---- | ----------- |
+| alivesms_phone_number | SMS Number |
+| botchain_name | Botchain Name |
+| bot_timestamp | Bot Timestamp |
+| from_phone_number | Phone Number |
+| org_name | Org Name |
+| orgbot_name | Org Bot Name |
+| orgbot_type | Org Bot Type |
+| thread_id | Thread ID |
+| init_messageid | Initial Message ID |
+| init_message_content | initial Message Content |
+| init_orgbot_name | Initial Org Bot Name |
+| bot_message | Bot Message |
+| user_reply | User Reply |
+| keyword_found | Keyword Found |
+| transaction_id | Transaction ID |
+| report_id | Report ID |
+| donaterequest_status | Donate Request Status |
+| donate_amount | Donate Amount |
+| question_type | Question Type |
+
 <!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
