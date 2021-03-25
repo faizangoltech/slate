@@ -93,6 +93,13 @@ This is a API Docs for Alive5 Users
 | ---- | ---------- | ----------- | -------- | ---- |
 | date_start | params | Start date | No | string |
 | date_end | params | End date | No | string |
+| page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
+| limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
+| channel_id | Channel ID | No | string |
+| channel_name | Channel Name | No | string |
+| crm_id | CRM ID | No | string |
+| agent_id | Agent User ID | No | string |
+| assigned_to | Agent UserName | No | string |
 
 **Responses**
 
@@ -231,6 +238,11 @@ This is a API Docs for Alive5 Users
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
 | filter_by | params | Can filter by the name of the Channel (Ex: "general") | No | string |
+| channel_id | Channel ID | No | string |
+| channel_name | Channel Name | No | string |
+| crm_id | CRM ID | No | string |
+| agent_id | Agent User ID | No | string |
+| assigned_to | Agent UserName | No | string |
 
 **Responses**
 
@@ -277,6 +289,13 @@ This is a API Docs for Alive5 Users
 | ---- | ---------- | ----------- | -------- | ---- |
 | date_start | params | Start date | No | string |
 | date_end | params | End date | No | string |
+| page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
+| limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
+| channel_id | Channel ID | No | string |
+| channel_name | Channel Name | No | string |
+| crm_id | CRM ID | No | string |
+| agent_id | Agent User ID | No | string |
+| assigned_to | Agent UserName | No | string |
 
 **Responses**
 
