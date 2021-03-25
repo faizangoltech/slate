@@ -26,7 +26,7 @@ This is a API Docs for Alive5 Users
 # Authentication 
 
 |apiKey|*X-A5-APIKEY*|
-|---|---| 
+|X-A5-APIKEY|fb359c68-6956-4db9-8b0b-9f96654aca1f| 
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/ACCOUNT
 ## ***GET*** 
