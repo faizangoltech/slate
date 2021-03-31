@@ -100,7 +100,7 @@ Once in Integrations, **click Generate API Key**.
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
 
-**Filters** Filters can now be applied to the GET call of SMS Messages. All filters are case-sensitive.
+**Filters:** Filters can now be applied to the GET call of SMS Messages. All filters are case-sensitive.
 
 | Filter | Description |
 | ------ | ----------- |
@@ -247,7 +247,7 @@ Once in Integrations, **click Generate API Key**.
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
 
-**Filters** Filters can now be applied to the GET call of LiveChat Messages. All filters are case-sensitive.
+**Filters:** Filters can now be applied to the GET call of LiveChat Messages. All filters are case-sensitive.
 
 | Filter | Description |
 | ------ | ----------- |
@@ -305,7 +305,7 @@ Once in Integrations, **click Generate API Key**.
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
 
-**Filters** Filters can now be applied to the GET call of LiveChat Messages. All filters are case-sensitive.
+**Filters:** Filters can now be applied to the GET call of Facebook Messages. All filters are case-sensitive.
 
 | Filter | Description |
 | ------ | ----------- |
