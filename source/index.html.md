@@ -25,9 +25,13 @@ This is a API Docs for Alive5 Users
 
 # Authentication 
 
-|apiKey|*Key*|
+|KEY|*VALUE*|
 | ---- | ----------- |
-|*X-A5-APIKEY*|*32 digit key generated from alive5 organiztion under "Integrations"*| 
+|*X-A5-APIKEY*|*32 DIGIT API KEY GENERATED FROM ALIVE5 ORGANIZATION UNDER "INTEGRATIONS"*| 
+
+**How to find your API Key**
+Log into your Alive5 account and go to **Integrations** within the Dashboard.
+Once in Integrations, **click Generate API Key**.
 
 # HTTPS://API.ALIVE5.COM/PUBLIC/1.0/ACCOUNT
 ## ***GET*** 
@@ -95,11 +99,16 @@ This is a API Docs for Alive5 Users
 | date_end | params | End date | No | string |
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
-| channel_id | params | Channel ID | No | string |
-| channel_name | params | Channel Name | No | string |
-| crm_id | params | CRM ID | No | string |
-| agent_id | params | Agent User ID | No | string |
-| assigned_to | params | Agent UserName | No | string |
+
+**Filters** Filters can now be applied to the GET call of SMS Messages. All filters are case-sensitive.
+
+| Filter | Description |
+| ------ | ----------- |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | Agent User ID |
+| assigned_to |Agent UserName |
 
 **Responses**
 
@@ -237,12 +246,16 @@ This is a API Docs for Alive5 Users
 | date_end | params | End date | No | string |
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
-| filter_by | params | Can filter by the name of the Channel (Ex: "general") | No | string |
-| channel_id | params | Channel ID | No | string |
-| channel_name | params | Channel Name | No | string |
-| crm_id | params | CRM ID | No | string |
-| agent_id | params | Agent User ID | No | string |
-| assigned_to | params | Agent UserName | No | string |
+
+**Filters** Filters can now be applied to the GET call of LiveChat Messages. All filters are case-sensitive.
+
+| Filter | Description |
+| ------ | ----------- |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | Agent User ID |
+| assigned_to |Agent UserName |
 
 **Responses**
 
@@ -291,11 +304,16 @@ This is a API Docs for Alive5 Users
 | date_end | params | End date | No | string |
 | page | params | a numeric value such as 1, designating the set of pages based on the limit value | Yes | string |
 | limit | params | a numeric value such a 100, the number of results to return at once. | Yes | string |
-| channel_id | params | Channel ID | No | string |
-| channel_name | params | Channel Name | No | string |
-| crm_id | params | CRM ID | No | string |
-| agent_id | params | Agent User ID | No | string |
-| assigned_to | params | Agent UserName | No | string |
+
+**Filters** Filters can now be applied to the GET call of LiveChat Messages. All filters are case-sensitive.
+
+| Filter | Description |
+| ------ | ----------- |
+| channel_id | Channel ID |
+| channel_name | Channel Name |
+| crm_id | CRM ID |
+| agent_id | Agent User ID |
+| assigned_to |Agent UserName |
 
 **Responses**
 
