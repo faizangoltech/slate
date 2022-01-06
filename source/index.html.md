@@ -23,7 +23,7 @@ This is a API Docs for Alive5 Users
 
 [Find out more about Alive5](https://www.alive5.com/) 
 
-# Authentication 
+# Authentications
 
 |KEY|*VALUE*|
 | ---- | ----------- |
